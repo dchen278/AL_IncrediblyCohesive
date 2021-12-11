@@ -15,6 +15,15 @@ public class OrderedArrayList {
         return _list.get(index);
     }
 
+    public Integer remove(int index) {
+        return _list.remove(index);
+    }
+
+    public int size() {
+        return _list.size();
+    }
+
+
     public boolean add(Integer value) {
         int i = 0;
         while (i < _list.size()) {
@@ -27,15 +36,6 @@ public class OrderedArrayList {
         _list.add(value);
         return true;
     }
-
-    public Integer remove(int index) {
-        return _list.remove(index);
-    }
-
-    public int size() {
-        return _list.size();
-    }
-
     public static void main(String[] args) {
         OrderedArrayList list = new OrderedArrayList();
         System.out.println("Printing empty OrderedArrayList: \n" + list);
