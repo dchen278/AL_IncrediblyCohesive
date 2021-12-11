@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/878465038346747935/919278794643210291/Team_Incredibly_Cohesive.png" />
 </p>
@@ -8,7 +7,7 @@
 </div>
 
 ## ALTester
-The `test` method iterates through a given `ArrayList` and compares the number at index `i` with the number at index `i+1`. If the number at index `i` is greater than the number at index `i+1`, then the method returns false. After the iteration is done, the method will return true. 
+The `test` method iterates through a given `ArrayList` and compares the number at index `i` with the number at index `i+1`. If the number at index `i` is greater than the number at index `i+1`, then the method returns false. After the iteration is done, and `i < list.size()-1`, the method will return true. 
 
 ## OrderedArrayList
  * ### String toString()
