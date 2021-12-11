@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/899077526301835324/919270785607159838/Team_Incredibly_Cohesive.png" />
 </p>
@@ -8,8 +7,9 @@
 </div>
 
 ## ALTester
-* Loops through array stillDavid using a for loop
-* If stillDavid.get(index) > stillDavid.get(index+1), return false
-* If this the previous boolean expression is never true, and we reach the end of stillDavid, then we return true because it is sorted
+The `test` method iterates through a given `ArrayList` and compares the number at index `i` with the number at index `i+1`. If the number at index `i` is greater than the number at index `i+1`, then the method returns false. After the iteration is done, and `i < list.size()-1`, the method will return true. 
 
 ## OrderedArrayList
+ * ### String toString()
+    * Clarification: Private instance of `ArrayList<Integer>` is called _list
+    * Returns the value returned by `_list_.toString()`
