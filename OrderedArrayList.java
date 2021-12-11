@@ -22,6 +22,7 @@ public class OrderedArrayList {
                 _list.add(i, value);
                 return true;
             }
+            i++;
         }
         _list.add(value);
         return true;
@@ -37,6 +38,16 @@ public class OrderedArrayList {
 
     public static void main(String[] args) {
         OrderedArrayList list = new OrderedArrayList();
-        
+        System.out.println("Printing empty OrderedArrayList: \n" + list);
+
+        for (int i = 0; i < 10; i++) {
+            list.add((int) (Math.random() * 100));
+        }
+
+        System.out.println("Printing OrderedArrayList with 10 random values: \n" + list);
+
+        System.out.println("Removing value at index 3: \n" + list.remove(3));
+
+        System.out.println("Printing OrderedArrayList after removing value at index 3: \n" + list);
     }
 }
