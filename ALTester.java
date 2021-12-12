@@ -8,10 +8,10 @@ public class ALTester {
         for (int i = 0; i < 23; i++) {
             list.add(i);
         }
-        System.out.println(stillDavid.test(list));
+        System.out.println(stillDavid.isSorted(list));
     }
 
-    public boolean test(ArrayList<Integer> list) {
+    public boolean isSorted(ArrayList<Integer> list) {
         for (int i = 0; i < list.size() - 1; i++) {
             if (list.get(i).compareTo(list.get(i + 1)) > 0) {
                 return false;
