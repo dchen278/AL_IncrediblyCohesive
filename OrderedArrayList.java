@@ -7,18 +7,22 @@ public class OrderedArrayList {
         _list = new ArrayList<Integer>();
     }
 
+    // return the string representation of the list
     public String toString() {
         return _list.toString();
     }
 
+    // gets the value at the specified index
     public Integer get(int index) {
         return _list.get(index);
     }
 
+    // remove the value at the specified index
     public Integer remove(int index) {
         return _list.remove(index);
     }
 
+    // returns the size of the list
     public int size() {
         return _list.size();
     }
