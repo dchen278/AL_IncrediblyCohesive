@@ -1,0 +1,5 @@
+DISCO:
+In ALtester, by saying ArrayList<Integer> list = new ArrayList<Integer>();, we initialze a list of integers and are able yo use methods in class ArrayList
+
+QCC:
+What is a collection in java? Is it the same as an array/list?

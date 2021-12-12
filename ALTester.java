@@ -4,7 +4,7 @@ public class ALTester {
 
     public static void main(String[] args) {
         ALTester stillDavid = new ALTester();
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<Integer>(); //intializes Arraylist list as a list of integers
         for (int i = 0; i < 23; i++) {
             list.add(i);
         }

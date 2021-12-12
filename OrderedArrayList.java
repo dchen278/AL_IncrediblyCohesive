@@ -44,7 +44,7 @@ public class OrderedArrayList {
             list.add((int) (Math.random() * 100));
         }
 
-        System.out.println("Printing OrderedArrayList with 10 random values: \n" + list);
+        System.out.println("Printing OrderedArrayList with 10 random values from 1 to 100: \n" + list);
 
         System.out.println("Removing value at index 3: \n" + list.remove(3));
 
