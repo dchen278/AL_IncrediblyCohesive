@@ -39,26 +39,26 @@ public class OrderedArrayList {
         _list.add(value);
         return true;
     }
-    
+
     // use binary search to find the correct index and add newVal
-    public void addBinary(Integer newVal) {
+    public boolean addBinary(Integer newVal) {
         int low = 0;
         int high = _list.size() - 1;
-        int mid = (low + high) / 2;
-        int index = 0;
+        int mid = 0;
         while (low <= high) {
-            System.out.println("low: " + low + " high: " + high + " mid: " + mid);
             mid = (low + high) / 2;
-            if (newVal.compareTo(_list.get(mid)) < 0) {
+            int compare = newVal.compareTo(_list.get(mid));
+            if (compare == 0) {
+                _list.add(mid, newVal);
+                return true;
+            } else if (compare < 0) {
                 high = mid - 1;
-            } else if (newVal.compareTo(_list.get(mid)) > 0) {
-                low = mid + 1;
             } else {
-                index = mid;
-                break;
+                low = mid + 1;
             }
         }
-        _list.add(index, newVal);
+        _list.add(low, newVal);
+        return true;
     }
 
     public static void main(String[] args) {
@@ -76,5 +76,11 @@ public class OrderedArrayList {
         System.out.println("Removing value at index 3: \n" + list.remove(3));
 
         System.out.println("Printing OrderedArrayList after removing value at index 3: \n" + list);
+
+        OrderedArrayList list2 = new OrderedArrayList();
+        for (int i = 0; i < 10; i++) {
+            list2.addBinary((int) (Math.random() * 100));
+        }
+        System.out.println("Printing OrderedArrayList with 10 random values from 1 to 100: \n" + list2);
     }
 }
