@@ -1,3 +1,8 @@
+Team Incredibly Cohesive (David Chen, Jaylen Zeng, Orion Roven)
+APCS pd7
+L02: Well Al B. Sorted
+12/13/21
+
 DISCO:
 *In ALtester, by saying ArrayList<Integer> list = new ArrayList<Integer>();, we initialze a list of integers and are able yo use methods in class ArrayList
 *Binary search is an algorithm used to find a specific item in a sorted list of items. We do this by effectively splitting the array in half and using what is in the middle to our advantage. Basically, you repeatedly divide the search interval of your array by half. You should start off by covering the whole array. In short, we are comparing the value of the middle index with something else and based on that we can narrow it down to either the lower half of the array or the higher one. We continue this process, and eventually we will reach the specified index we need.
