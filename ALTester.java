@@ -4,11 +4,18 @@ public class ALTester {
 
     public static void main(String[] args) {
         ALTester stillDavid = new ALTester();
-        ArrayList<Integer> list = new ArrayList<Integer>(); //intializes Arraylist list as a list of integers
+        ArrayList<Integer> sortedList = new ArrayList<Integer>(); //intializes Arraylist list as a list of integers
         for (int i = 0; i < 23; i++) {
-            list.add(i);
+            sortedList.add(i);
         }
-        System.out.println(stillDavid.isSorted(list));
+        System.out.println(stillDavid.isSorted(sortedList));
+
+        ALTester bob = new ALTester();
+        ArrayList<Integer> unsortedList = new ArrayList<Integer>();
+        for(int i=20; i>0; i--) {
+            unsortedList.add(i);
+        }
+        System.out.println(bob.isSorted(unsortedList));
     }
 
     public boolean isSorted(ArrayList<Integer> list) {
