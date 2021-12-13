@@ -13,3 +13,8 @@ The `test` method iterates through a given `ArrayList` and compares the number a
  * ### String toString()
     * Clarification: Private instance of `ArrayList<Integer>` is called _list
     * Returns the value returned by `_list_.toString()`
+ * ### void addBinary()
+    * Use binary search to find the right index to add value
+    * Compares the target value-
+ * ### void addLinear()
+    * Use linear search to add the value at the right index
