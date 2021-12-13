@@ -22,6 +22,6 @@ The `test` method iterates through a given `ArrayList` and compares the number a
     * If the while loop exits, then add the value at `low` index
  * ### void addLinear()
     * Use linear search to add the value at the right index
- * ### Integer get(int index), Integer remove(int index), Integer size()
+ * ### Integer get(int index), Integer remove(int index), int size()
     * Built-in ArrayList methods reimplemented in order to be functional with objects of OrderedArrayList.
     * Retains all functionality of original methods by simply calling the original ArrayList method.
