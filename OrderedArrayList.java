@@ -47,6 +47,7 @@ public class OrderedArrayList {
         int mid = (low + high) / 2;
         int index = 0;
         while (low <= high) {
+            System.out.println("low: " + low + " high: " + high + " mid: " + mid);
             mid = (low + high) / 2;
             if (newVal.compareTo(_list.get(mid)) < 0) {
                 high = mid - 1;
@@ -65,8 +66,10 @@ public class OrderedArrayList {
         System.out.println("Printing empty OrderedArrayList: \n" + list);
 
         for (int i = 0; i < 10; i++) {
-            list.addBinary((int) (Math.random() * 100));
+            list.addLinear((int) (Math.random() * 100));
         }
+
+        // list.addBinary(76);
 
         System.out.println("Printing OrderedArrayList with 10 random values from 1 to 100: \n" + list);
 

@@ -18,6 +18,6 @@ The `test` method iterates through a given `ArrayList` and compares the number a
     * Compares the value to be added to the middle value
       * If the value is smaller than the middle value, then `high` takes on the value of `mid` - 1, effectively changing the middle value to something smaller
       * If the value is bigger than the middle value, then `low` takes on the value of `mid` + 1, changing the middle value to something bigger
-      * Everytime the while loop runs, the `mid` value takes on the value of `low + high / 2` to find the new middle index
+      * Everytime the while loop runs, the `mid` value takes on the value of `low + high / 2` to find the new middle index. This eliminates the half in which value cannot be and continues with the search 
  * ### void addLinear()
     * Use linear search to add the value at the right index
