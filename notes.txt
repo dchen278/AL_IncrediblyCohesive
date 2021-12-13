@@ -1,5 +1,7 @@
 DISCO:
-In ALtester, by saying ArrayList<Integer> list = new ArrayList<Integer>();, we initialze a list of integers and are able yo use methods in class ArrayList
+*In ALtester, by saying ArrayList<Integer> list = new ArrayList<Integer>();, we initialze a list of integers and are able yo use methods in class ArrayList
+*Binary search is an algorithm used to find a specific item in a sorted list of items. We do this by effectively splitting the array in half and using what is in the middle to our advantage.
+Basically, you repeatedly divide the search interval of your array by half. You should start off by covering the whole array.
 
 QCC:
 What is a collection in java? Is it the same as an array/list?
